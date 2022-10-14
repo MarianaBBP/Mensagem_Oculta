@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Projeto individual modulo 2/css/style.css">
+    <title>Cifra de cesar</title>
+</head>
+<body>
+    <form class="container">
+        <h1 class="titulo">De(Codificando)</h1>
+        <section class="escolha">
+            <select name="criptografia" id="criptografia">
+                <option value="" selected>Escolha</option>
+                <option value="cesar">Cifra de Caesar</option>
+                <option value="base64">base64</option>
+            </select>
+
+            <input id="ocultarIncremento" type="number" min="1" max="25" placeholder="Incremento da cifra">
+
+            <div class="metodo">
+                <input checked type="radio" id="codificar" name="escolhaDeMetodo" value="codificar">
+                <label for="escolhaDeMetodo">Codificar 🔒</label>
+            </div>
+            <div class="metodo">
+                <input type="radio" id="decodificar" name="escolhaDeMetodo">
+                <label for="escolhaDeMetodo">Decodificar 🔑</label>
+            </div>
+        </section>
+
+        <section class="mensagem-usuario">
+            <textarea class="texto" id="escrever" name="texto-usuario" placeholder="Digite aqui" rows="10"
+                cols="33"></textarea>
+            <textarea class="texto" id="resultado" name="texto-usuario" rows="10" cols="33" readonly></textarea>
+        </section>
+
+        <button type="button" id="botao">Codificar Mensagem!</button>
+
+    </form>
+    <footer>
+
+        <div>
+            <a href="https://www.linkedin.com/in/marianabbpinho/"><img class="icon" src="img/linkedin-icon2.png" width="35" height="35"></a>
+            <a href="https://github.com/MarianaBBP"><img class="icon" src="img/github-icon.png" width="35" height="35"></a>
+        </div>
+
+        <div>
+            <p class="rodape"><a href="https://www.linkedin.com/in/marianabbpinho/"><strong>Mariana Benício </strong></a> ©Copyright 2022</p>
+        </div>
+
+    </footer>
+
+    <script src="./cifra.js"></script>
+</body>
+</html>
